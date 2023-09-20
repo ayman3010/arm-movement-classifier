@@ -1,0 +1,28 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+data = np.load("freestyle_30s_2000Hz_3.npy")
+print(data)
+plt.subplot(241)
+plt.plot(data[0])
+plt.title("Électrode 1")
+plt.subplot(242)
+plt.plot(data[1])
+plt.title("Électrode 2")
+plt.subplot(243)
+plt.plot(data[2])
+plt.title("Électrode 3")
+plt.subplot(244)
+plt.plot(data[3])
+plt.title("Électrode 4")
+plt.subplot(245)
+plt.plot(data[4])
+plt.title("Électrode 5")
+plt.subplot(246)
+plt.plot(data[5])
+plt.title("Électrode 6")
+plt.subplot(247)
+plt.plot(data[6])
+plt.title("Électrode 7")
+plt.show()
